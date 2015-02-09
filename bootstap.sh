@@ -50,6 +50,7 @@ symlinkifne .shellpaths
 symlinkifne .shellvars
 symlinkifne .vim
 symlinkifne .vimrc
+symlinkifne .fbtermrc
 
 popd > /dev/null 2>&1
 
