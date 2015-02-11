@@ -52,6 +52,9 @@ symlinkifne .vim
 symlinkifne .vimrc
 symlinkifne .fbtermrc
 
+#init crontab content
+crontab .crontab
+
 popd > /dev/null 2>&1
 
 ./osx.sh
