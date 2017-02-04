@@ -1,9 +1,11 @@
 [user]
-	name = gigimaster
-	email = sin0418@gmail.com
+	name = xzheng
+	email = xzheng@hillinsight.com
 [github]
     # https://github.com/blog/180-local-github-config
     user = gigimaster
+	name = gigimaster
+	email = sin0418@gmail.com
 
     # in a few months, look into the include directive (after bug fixes)
     token = MOVEALONG
