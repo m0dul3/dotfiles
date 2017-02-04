@@ -1,23 +1,26 @@
-"""""""""""""""""
-""" Vundle """"""
-"""""""""""""""""
-set nocompatible
-filetype off
+""""""""""""""""""
+"""" Vundle """"""
+""""""""""""""""""
+"set nocompatible
+"filetype off
+"
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
+"
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'majutsushi/tagbar'
+"Plugin 'vim-syntastic/syntastic'
+"
+"call vundle#end()            " required
+"filetype plugin indent on    " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-syntastic/syntastic'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
+execute pathogen#infect()
 
 
-"""""""""""""""""
-""" vim plugin
+""""""""""""""""
+""" "vim plugin
 """""""""""""""""
 
 """nerd tree
@@ -47,9 +50,9 @@ let g:syntastic_python_pylint_args = " --load-plugins pylint_flask -r n "
 """line num, aotoindent, tab, space
 set nu si sr et sw=4 ts=4 sts=4 
 
-""filetype detect, highlight
-"filetype on
-"filetype plugin indent on
+"filetype detect, highlight
+filetype on
+filetype plugin indent on
 syntax on
 
 """encoding
