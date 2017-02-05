@@ -1,6 +1,6 @@
 """"""""""""""""
-""" "vim plugin
-"""""""""""""""""
+""""vim plugin""
+""""""""""""""""
 
 """nerd tree
 "let NERDTreeWinPos="right"
@@ -10,7 +10,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 """tagbar
 nmap <F8> :TagbarToggle<CR>
 
-""" syntastic
+"""syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -21,11 +21,12 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_pylint_args = " --load-plugins pylint_flask -r n "
 
+"""plugin manager
+execute pathogen#infect()
 
 """"""""""""""""""""""""
 """ non-Plugin stuff """
 """"""""""""""""""""""""
-execute pathogen#infect()
 
 """line num, aotoindent, tab, space
 set nu si sr et sw=4 ts=4 sts=4 
