@@ -20,7 +20,6 @@ bot "creating symlinks for project dotfiles..."
 symlinkifne .gitconfig
 symlinkifne .gitignore
 symlinkifne .git_template
-symlinkifne .gitshots
 symlinkifne .vim
 symlinkifne .vimrc
 
