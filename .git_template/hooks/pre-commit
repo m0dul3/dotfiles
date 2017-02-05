@@ -38,7 +38,7 @@ for one_file in $changed_files;do
             result=`pylint --load-plugins pylint_flask -rn $one_file 2>/dev/null`
             if [ -n "${result}" ];then
                 echo "Begin detect file: "$one_file
-                echo "${result}\n"
+                echo -e "${result}\n"
             fi
 
             ###switch error cant commit####
@@ -53,8 +53,8 @@ for one_file in $changed_files;do
 done
 
 if [ $enum -gt 0 ];then
-    echo "ERRORS!!!!!!"
-    echo "${errors}"
+    echo "!!!!!!!!!!!!!!ERRORS!!!!!!!!!!!"
+    echo -e "${errors}"
     exit 1
 else
     echo "no problem"
